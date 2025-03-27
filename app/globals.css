@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #22c55e;
+  --foreground: 222.2 84% 4.9%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Garantir que o fundo seja 100% verde */
+html,
+body,
+#__next,
+main {
+  background-color: #22c55e !important; /* bg-green-500 */
+  min-height: 100vh;
+}
+
